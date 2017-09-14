@@ -11,4 +11,7 @@ class HeadNews extends Component {
     return <div>Hello</div>;
   }
 }
-export default connect(null, { fetchHead })(HeadNews);
+function mapStateToProps(state) {
+  return { heads: state.heads };
+}
+export default connect(mapStateToProps, { fetchHead })(HeadNews);
