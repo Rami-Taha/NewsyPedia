@@ -4,6 +4,7 @@ export default function(state = {}, action) {
   switch (action.type) {
     case FETCH_HEAD:
       return _.mapKeys(action.payload.data.articles, 'id');
+
     default:
       return state;
   }

@@ -25,7 +25,7 @@ export function fetchSources() {
   };
 }
 export function fetchHead() {
-  const url = `${HEAD_URL}`;
+  const url = HEAD_URL;
   const request = axios.get(url);
   return {
     type: FETCH_HEAD,

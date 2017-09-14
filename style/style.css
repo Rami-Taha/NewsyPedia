@@ -1,13 +1,41 @@
-.input-group {
-  margin: 30px 0px;
-}
-body {
-  display: flex;
-}
 
 .card,
 .card-deck {
   height: 350px;
   width: 20rem;
   display: flex;
+  padding: 10px 10px;
+}
+html {
+  height: 100%;
+
+.input-group {
+  margin: 20px 0px;
+}
+body {
+  display: flex;
+  padding-top: 70px;
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
+
+navbar ,
+footer {
+  border-bottom: 1px solid lightgray;
+  text-align: center;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 22px;
+  padding: 10px 0;
+}
+
+.jumbotron {
+  color: #0055aa;
+  background-color: #ecf0f1;
+}
+.navbar-inverse {
+  background: #0055aa;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }

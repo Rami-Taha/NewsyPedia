@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
+import { Link } from 'react-router-dom';
+import Truncate from 'react-truncate';
 import { fetchSources } from '../actions';
+import { Header } from './Header';
 
 class NewsIndex extends Component {
   componentDidMount() {
@@ -15,9 +18,11 @@ class NewsIndex extends Component {
             <h3 className="card-header">{source.name}</h3>
             <div className="card-block">
               <h4 className="card-title">{source.category}</h4>
-              <p className="card-text">{source.description}</p>
-              <a href={source.url} className="btn btn-primary">
-                Go
+              <Truncate lines={4}>
+                <p className="card-text">{source.description}</p>
+              </Truncate>
+              <a href={source.url} className="btn btn-primary-sm">
+                More..
               </a>
             </div>
           </div>
@@ -26,12 +31,7 @@ class NewsIndex extends Component {
     });
   }
   render() {
-    return (
-      <div>
-        <h3>News Sources</h3>
-        <div className="container">{this.renderSources()}</div>
-      </div>
-    );
+    return <div className="container">{this.renderSources()}</div>;
   }
 }
 
