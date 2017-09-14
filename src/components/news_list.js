@@ -6,42 +6,29 @@ class NewsList extends Component {
     const imgUrl = article.urlToImage;
 
     return (
-      <li key={articleT} className="media my-4">
-        <div className="vedio-list media ">
-          <div className="media-left">
-            <img
-              className="d-flex mr-3 rounded"
-              src={imgUrl}
-              height="200"
-              width="200"
-            />
-          </div>
-
-          <div className="media-body">
-            <div className="media-heading">
-              <h5 className="mt-0 mb-1">{articleT}</h5>
-            </div>
-            <hr />
-            <div>{article.description}</div>
-            <br />
-            <div>{article.source.name}</div>
-            <div>
-              <a className="btn btn-primary" href={article.url} role="button">
-                Read More...
-              </a>
-            </div>
+      <div key={articleT} className="row col-sm-6 col-md-4 ">
+        <div className="card-deck">
+          <img
+            className="card-img-top"
+            src={imgUrl}
+            alt="Card image cap"
+            width="318"
+            height="180"
+          />
+          <div className="card-block">
+            <h6 className="card-title">{articleT}</h6>
+            <p className="card-text">{article.description}</p>
+            <a href={article.url} className="btn btn-primary">
+              More...
+            </a>
           </div>
         </div>
-      </li>
+      </div>
     );
     // this.renderNews = this.renderNews.bind(this);
   }
   render() {
-    return (
-      <ul className="col-md-12 list-group">
-        {this.props.newsfeed.map(this.renderNews)}
-      </ul>
-    );
+    return <div>{this.props.newsfeed.map(this.renderNews)}</div>;
   }
 }
 function mapStateToProps({ newsfeed }) {
