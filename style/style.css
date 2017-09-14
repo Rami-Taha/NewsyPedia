@@ -4,6 +4,10 @@
 body {
   display: flex;
 }
-.card {
+
+.card,
+.card-deck {
+  height: 350px;
   width: 20rem;
+  display: flex;
 }

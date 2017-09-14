@@ -10,9 +10,18 @@ class NewsIndex extends Component {
   renderSources() {
     return _.map(this.props.sources, source => {
       return (
-        <li key={source.id} className="list-group-item">
-          {source.name}
-        </li>
+        <div key={source.id} className="row col-md-6 col-lg-4">
+          <div className="card ">
+            <h3 className="card-header">{source.name}</h3>
+            <div className="card-block">
+              <h4 className="card-title">{source.category}</h4>
+              <p className="card-text">{source.description}</p>
+              <a href={source.url} className="btn btn-primary">
+                Go
+              </a>
+            </div>
+          </div>
+        </div>
       );
     });
   }
@@ -20,7 +29,7 @@ class NewsIndex extends Component {
     return (
       <div>
         <h3>News Sources</h3>
-        <ul className="list-group">{this.renderSources()}</ul>
+        <div className="container">{this.renderSources()}</div>
       </div>
     );
   }

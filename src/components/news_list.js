@@ -28,7 +28,11 @@ class NewsList extends Component {
     // this.renderNews = this.renderNews.bind(this);
   }
   render() {
-    return <div>{this.props.newsfeed.map(this.renderNews)}</div>;
+    return (
+      <div className="container">
+        {this.props.newsfeed.map(this.renderNews)}
+      </div>
+    );
   }
 }
 function mapStateToProps({ newsfeed }) {
