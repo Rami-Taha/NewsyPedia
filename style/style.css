@@ -35,7 +35,7 @@ footer {
   background-color: #ecf0f1;
 }
 .navbar-inverse {
-  background: #0055aa;
+  background: rgba(0, 85, 170, 1);
   font-family: 'Sedgwick Ave Display', cursive;
 }
 .flex {
