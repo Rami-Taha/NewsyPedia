@@ -5,6 +5,7 @@
   width: 20rem;
   display: flex;
   padding: 10px 10px;
+  font-family: 'Sedgwick Ave Display', cursive;
 }
 html {
   height: 100%;
@@ -34,6 +35,7 @@ footer {
 }
 .navbar-inverse {
   background: #0055aa;
+  font-family: 'Sedgwick Ave Display', cursive;
 }
 .flex {
   display: flex;
