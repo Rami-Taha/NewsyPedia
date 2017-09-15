@@ -24,7 +24,7 @@ const Header = () => {
                 className="glyphicon glyphicon-equalizer"
                 aria-hidden="true"
               >
-                IMAGES
+                Newsy Pedia
               </span>
             </a>
           </div>
@@ -34,7 +34,9 @@ const Header = () => {
           >
             <ul className="nav navbar-nav">
               <li>
-                <a href="#">About</a>
+                <Link className="btn btn-primary-sm" to="/search">
+                  Today Headlines
+                </Link>
               </li>
               <li>
                 {' '}
