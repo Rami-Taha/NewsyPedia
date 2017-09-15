@@ -20,10 +20,7 @@ const Header = () => {
               <span className="icon-bar" />
             </button>
             <a className="navbar-brand" href="#">
-              <span
-                className="glyphicon glyphicon-equalizer"
-                aria-hidden="true"
-              >
+              <span className="" aria-hidden="true">
                 NewsyPedia
               </span>
             </a>
@@ -45,7 +42,9 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <Link className="btn btn-primary-sm" to="/">
+                  Search
+                </Link>
               </li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
