@@ -24,9 +24,9 @@ export function fetchSources() {
     payload: request
   };
 }
-export function fetchHead() {
+export function fetchHead(callback) {
   const url = HEAD_URL;
-  const request = axios.get(url);
+  const request = axios.get(url).then(() => callback());
   return {
     type: FETCH_HEAD,
     payload: request

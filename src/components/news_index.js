@@ -4,8 +4,6 @@ import _ from 'lodash';
 import { Link } from 'react-router-dom';
 import Truncate from 'react-truncate';
 import { fetchSources } from '../actions';
-import { Header } from './Header';
-
 class NewsIndex extends Component {
   componentDidMount() {
     this.props.fetchSources();

@@ -5,7 +5,7 @@ import HeadReducer from './head_reducer';
 const rootReducer = combineReducers({
   newsfeed: NewsReducer,
   sources: SourcesReducer,
-  heads: HeadReducer
+  articles: HeadReducer
 });
 
 export default rootReducer;
