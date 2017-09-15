@@ -10,8 +10,7 @@
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "postinstall": "webpack -p",
     "start": "node server.js",
-    "test":
-      "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
   "author": "",
@@ -48,6 +47,8 @@
     "react-truncate": "^2.1.5",
     "reactstrap": "^4.8.0",
     "redux": "^3.0.4",
-    "redux-promise": "^0.5.3"
+    "redux-promise": "^0.5.3",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.14.0"
   }
 }
