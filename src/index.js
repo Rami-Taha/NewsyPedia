@@ -21,7 +21,6 @@ ReactDOM.render(
         <Switch>
           <Route path="/search" component={App} />
           <Route path="/head" component={HeadNews} />
-          <Route path="/list" component={NewsList} />
           <Route path="/" component={NewsIndex} />
         </Switch>
       </div>
