@@ -42,8 +42,8 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link className="btn btn-primary-sm" to="/">
-                  Search
+                <Link className="btn btn-primary-sm" to="/index">
+                  News Directory
                 </Link>
               </li>
             </ul>
