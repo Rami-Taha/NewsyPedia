@@ -41,7 +41,7 @@ class HeadNews extends Component {
             src={imgUrl}
             alt="Card image cap"
             width="300"
-            height="200"
+            height="150"
             href={article.url}
           />
           <div className="card-block">
