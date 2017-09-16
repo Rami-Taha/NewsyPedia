@@ -37,10 +37,10 @@ class HeadNews extends Component {
       <div key={articleT} className="row flex col-lg-4 col-md-6">
         <div className="card ">
           <img
-            className="card-img-top"
+            className="card-img-top text-center"
             src={imgUrl}
             alt="Card image cap"
-            width="300"
+            width="250"
             height="120"
             href={article.url}
           />
