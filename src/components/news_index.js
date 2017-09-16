@@ -13,10 +13,10 @@ class NewsIndex extends Component {
       return (
         <div key={source.id} className="row col-md-6 col-lg-4">
           <div className="card ">
-            <h3 className="card-header color-red">{source.name}</h3>
+            <h3 className="card-header card-danger">{source.name}</h3>
             <div className="card-block">
               <h4 className="card-title">{source.category}</h4>
-              <Truncate lines={4}>
+              <Truncate lines={5}>
                 <p className="card-text">{source.description}</p>
               </Truncate>
               <a href={source.url} className="btn btn-primary-sm">

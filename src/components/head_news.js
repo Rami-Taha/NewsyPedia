@@ -24,7 +24,7 @@ class HeadNews extends Component {
           />
           <div className="card-block">
             <h6 className="card-title">{articleT}</h6>
-            <Truncate lines={2}>
+            <Truncate lines={4}>
               <p className="card-text text-justify">{article.description}</p>
             </Truncate>
             <a href={article.url} className="btn btn-primary-sm">
