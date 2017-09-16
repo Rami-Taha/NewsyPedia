@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header>
-      <nav classNameN="navbar navbar-inverse bg-primary navbar-fixed-top">
+      <nav classNameN="navbar navbar-inverse navbar-primary navbar-fixed-top">
         <div className="container">
           <div className="navbar-header">
             <button
