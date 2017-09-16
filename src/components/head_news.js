@@ -18,7 +18,7 @@ class HeadNews extends Component {
             className="card-img-top rounded mx-auto d-block"
             src={imgUrl}
             alt="Card image cap"
-            width="400"
+            width="340"
             height="200"
             href={article.url}
           />
