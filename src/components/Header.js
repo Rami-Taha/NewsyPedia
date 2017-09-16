@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 const Header = () => {
   return (
-    <nav className="navbar navbar-inverse navbar-primary">
+    <nav className="navbar navbar-inverse bg-primary">
       <div className="container">
         <div className="navbar-header">
           <button
@@ -49,9 +49,6 @@ const Header = () => {
           <ul className="nav navbar-nav navbar-right">
             <li>
               <a href="#">Sign In</a>
-            </li>
-            <li>
-              <a href="#">Account</a>
             </li>
           </ul>
         </div>
