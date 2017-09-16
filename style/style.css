@@ -16,12 +16,11 @@ html {
 }
 body {
   padding-top: 70px;
-  background: url(https://source.unsplash.com/IicyiaPYGGI);
 }
 .navbar-inverse {
   background: #0055aa;
 }
-.navbar-inverse {
+.navbar.navbar-inverse {
   background: #0055aa;
   font-family: 'Sedgwick Ave Display', cursive;
 }
