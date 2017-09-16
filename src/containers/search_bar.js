@@ -22,24 +22,21 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div>
-      <h3>News Search</h3>
-      </div>
-      <div class="w3-container w3-red">
       <form onSubmit={this.onFormSubmit} className="input-group">
-        <input
-          placeholder="Search your all favorites news here"
-          className="form-control"
-          value={this.state.term}
-          onChange={this.onInputChange}
-        />
-        <span className="input-group-btn">
-          <button type="submit" className="btn btn-primary">
-            search
-          </button>
-        </span>
+        <div>
+          <input
+            placeholder="Search NewsyPedia"
+            className="form-control"
+            value={this.state.term}
+            onChange={this.onInputChange}
+          />
+          <span className="input-group-btn">
+            <button type="submit" className="btn btn-primary">
+              search
+            </button>
+          </span>
+        </div>
       </form>
-      </div>
     );
   }
 }
