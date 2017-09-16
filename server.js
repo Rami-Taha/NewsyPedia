@@ -9,8 +9,9 @@
 // app.get('*', (req, res) => {
 //   res.sendFile(path.resolve(__dirname, 'index.html'));
 // });
-//  "postinstall": "webpack -p",
-//"start": "node server.js",
 // app.listen(port, () => {
 //   console.log('Server is up!');
 // });
+//"postinstall": "webpack -p",
+//"start": "node server.js",
+//
