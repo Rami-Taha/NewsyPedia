@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <div bsStyle="color:#0000FF">
-      >
       <nav classNameN="navbar navbar-inverse bg-primary navbar-fixed-top">
         <div className="container">
           <div className="navbar-header">
@@ -15,7 +14,7 @@ const Header = () => {
               data-target="#bs-example-navbar-collapse-1"
               aria-expanded="false"
             >
-              <span className="sr-only">Toggle navigation</span>
+              <span className="sr-only">Menu</span>
               <span className="icon-bar" />
               <span className="icon-bar" />
               <span className="icon-bar" />
