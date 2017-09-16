@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 const Header = () => {
   return (
-    <nav className="navbar fixed-top bg-primary">
+    <nav className="navbar navbar-inverse bg-primary">
       <div className="container">
         <div className="navbar-header">
           <button
