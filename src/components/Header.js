@@ -46,11 +46,6 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <ul className="nav navbar-nav navbar-right">
-            <li>
-              <a href="#">Sign In</a>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>
