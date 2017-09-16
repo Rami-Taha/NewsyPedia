@@ -12,24 +12,47 @@ class HeadNews extends Component {
     const articleT = article.title;
     const imgUrl = article.urlToImage;
     return (
-      <div key={articleT} className="row col-sm-6 col-md-4 ">
-        <div className="card-deck">
+      // <div key={articleT} className="row col-sm-6 col-md-4 ">
+      //   <div className="card-deck">
+      //     <img
+      //       className="card-img-top"
+      //       src={imgUrl}
+      //       alt="Card image cap"
+      //       width="318"
+      //       height="180"
+      //       href={article.url}
+      //     />
+      //     <div className="card-block">
+      //       <h6 className="card-title">{articleT}</h6>
+      //       <Truncate lines={3}>
+      //         <p className="card-text">{article.description}</p>
+      //       </Truncate>
+      //       <a href={article.url} className="btn btn-primary-sm">
+      //         More...
+      //       </a>
+      //     </div>
+      //   </div>
+      // </div>
+
+      <div key={articleT} className="row flex col-lg-4 col-md-6">
+        <div className="card ">
           <img
             className="card-img-top"
             src={imgUrl}
             alt="Card image cap"
-            width="318"
-            height="180"
+            width="300"
+            height="120"
             href={article.url}
           />
           <div className="card-block">
             <h6 className="card-title">{articleT}</h6>
-            <Truncate lines={3}>
-              <p className="card-text">{article.description}</p>
+            <Truncate lines={2}>
+              <p className="card-text text-justify">{article.description}</p>
             </Truncate>
             <a href={article.url} className="btn btn-primary-sm">
-              More...
+              More..
             </a>
+            <p>{article.publishedAt}</p>
           </div>
         </div>
       </div>
@@ -41,7 +64,7 @@ class HeadNews extends Component {
     console.log(this.props.articles);
     return (
       <div className="container">
-        <h1>Top Today Headlines News </h1>
+        <h4 className="text-center  text-danger">Today Top Headlines</h4>
         {this.props.articles.map(this.renderNews)}
       </div>
     );

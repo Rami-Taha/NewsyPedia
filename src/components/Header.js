@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <div>
-      <navbar classNameN="navbar navbar-inverse navbar-fixed-top">
+      <nav classNameN="navbar navbar-inverse bg-primary navbar-fixed-top">
         <div className="container">
           <div className="navbar-header">
             <button
@@ -57,7 +57,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-      </navbar>
+      </nav>
     </div>
   );
 };

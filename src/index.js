@@ -10,14 +10,16 @@ import NewsList from './components/news_list';
 import NewsIndex from './components/news_index';
 import HeadNews from './components/head_news';
 import Header from './components/Header';
-
+import Slider from './containers/slider';
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <BrowserRouter>
       <div>
-        <Header />
+        <div>
+          <Header />
+        </div>
         <Switch>
           <Route path="/search" component={App} />
           <Route path="/index" component={NewsIndex} />

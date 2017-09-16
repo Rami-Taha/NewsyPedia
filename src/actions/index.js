@@ -1,7 +1,6 @@
 import axios from 'axios';
-const BING_API = '3e2f6e5fb0094bd99b93e0f4179eb0de';
 const API_KEY = '366c7f50514546b6bda4a0edda450f99';
-const ROOT_URL = 'https://api.cognitive.microsoft.com/bing/v7.0/search?';
+const ROOT_URL = 'http://beta.newsapi.org/v2/top-headlines?';
 const ROOT_SOURCE = ` https://newsapi.org/v1/sources?language=en&apiKey=${API_KEY}`;
 const HEAD_URL = `https://newsapi.org/v1/articles?source=google-news&apiKey=${API_KEY}`;
 
@@ -10,9 +9,7 @@ export const FETCH_SOURCES = 'FETCH_SOURCES';
 export const FETCH_HEAD = 'FETCH_HEAD';
 
 export function fetchNews(news) {
-  const url = `${ROOT_URL}&q=${news} HTTP/1.1
-Host: api.cognitive.microsoft.com
-Ocp-Apim-Subscription-Key: 3e2f6e5fb0094bd99b93e0f4179eb0de`;
+  const url = `${ROOT_URL}q=${news}&apiKey=${API_KEY}`;
   const request = axios.get(url);
   return {
     type: FETCH_NEWS,
