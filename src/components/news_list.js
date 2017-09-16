@@ -14,7 +14,7 @@ class NewsList extends Component {
             className="card-img-top"
             src={imgUrl}
             alt="Card image cap"
-            width="318"
+            width="300"
             height="180"
             href={article.url}
           />
