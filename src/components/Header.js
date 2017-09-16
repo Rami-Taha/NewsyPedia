@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header>
-      <nav classNameN="navbar navbar-inverse navbar-primary navbar-fixed-top">
+    <div className="container-fluid">
+    <nav className="navbar navbar-inverse navbar-primary">
         <div className="container">
           <div className="navbar-header">
             <button
               type="button"
-              className="navbar-toggle collapsed"
+              className="navbar-toggle collapsed navbar-primary"
               data-toggle="collapse"
               data-target="#bs-example-navbar-collapse-1"
               aria-expanded="false"
@@ -58,7 +59,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-    </header>
+    </div>
   );
 };
 
