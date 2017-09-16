@@ -20,7 +20,7 @@ class NewsList extends Component {
           />
           <div className="card-block">
             <h6 className="card-title">{articleT}</h6>
-            <Truncate lines={3}>
+            <Truncate lines={5}>
               <p className="card-text">{article.description}</p>
             </Truncate>
             <a href={article.url} className="btn btn-primary-sm">
