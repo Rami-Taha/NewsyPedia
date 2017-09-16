@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 const Header = () => {
   return (
-    <div style="color:#0000FF">
+    <div bsStyle="color:#0000FF">
       >
       <nav classNameN="navbar navbar-inverse bg-primary navbar-fixed-top">
         <div className="container">
