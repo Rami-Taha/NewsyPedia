@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 const Header = () => {
   return (
-    <header>
     <div className="container-fluid">
-    <nav className="navbar navbar-inverse navbar-primary">
+      <nav className="navbar navbar-inverse navbar-primary">
         <div className="container">
           <div className="navbar-header">
             <button
               type="button"
-              className="navbar-toggle collapsed navbar-primary"
+              className="navbar-toggle collapsed bg-primary"
               data-toggle="collapse"
               data-target="#bs-example-navbar-collapse-1"
               aria-expanded="false"
