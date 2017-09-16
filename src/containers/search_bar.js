@@ -22,6 +22,10 @@ class SearchBar extends Component {
 
   render() {
     return (
+      <div>
+      <h3>News Search</h3>
+      </div>
+      <div class="w3-container w3-red">
       <form onSubmit={this.onFormSubmit} className="input-group">
         <input
           placeholder="Search your all favorites news here"
@@ -35,6 +39,7 @@ class SearchBar extends Component {
           </button>
         </span>
       </form>
+      </div>
     );
   }
 }
