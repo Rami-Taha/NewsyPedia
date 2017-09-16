@@ -39,7 +39,6 @@ class HeadNews extends Component {
   }
 
   render() {
-    console.log(this.props.articles);
     return (
       <div className="container-fluid">
         <h4 className="text-center  text-danger">Today Top Headlines</h4>
