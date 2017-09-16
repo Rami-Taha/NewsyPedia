@@ -40,8 +40,8 @@ class HeadNews extends Component {
             className="card-img-top"
             src={imgUrl}
             alt="Card image cap"
-            width="300"
-            height="150"
+            width="250"
+            height="120"
             href={article.url}
           />
           <div className="card-block">
@@ -63,7 +63,7 @@ class HeadNews extends Component {
   render() {
     console.log(this.props.articles);
     return (
-      <div className="container">
+      <div className="container-fluid">
         <h4 className="text-center  text-danger">Today Top Headlines</h4>
         {this.props.articles.map(this.renderNews)}
       </div>
