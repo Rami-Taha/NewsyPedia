@@ -1,12 +1,12 @@
 # NewsyPedia
 
+NewsyPedia is a single page applications with React JS and Redux.
+
 This App answers questions like:
 
 What stories are on the homepage of the NY Times right now?
 
 Are there any new articles about the next iPhone?
-
-NewsyPedia is a single page applications with React JS and Redux.
 
 ## Features
 
