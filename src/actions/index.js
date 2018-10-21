@@ -1,7 +1,7 @@
 import axios from 'axios';
 const API_KEY = '366c7f50514546b6bda4a0edda450f99';
-const ROOT_URL = 'http://beta.newsapi.org/v2/top-headlines?';
-const ROOT_SOURCE = ` https://newsapi.org/v1/sources?language=en&apiKey=${API_KEY}`;
+const ROOT_URL = 'https://newsapi.org/v2/top-headlines?';
+const ROOT_SOURCE = ` https://newsapi.org/v2/sources?language=en&apiKey=${API_KEY}`;
 const HEAD_URL = `https://newsapi.org/v1/articles?source=google-news&apiKey=${API_KEY}`;
 
 export const FETCH_NEWS = 'FETCH_NEWS';
